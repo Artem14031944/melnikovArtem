@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.track {
+    width: 400px;
+    height: 400px;
+    background: cornflowerblue;
+    border-radius: 20px;
+    border: 3px solid rgb(19, 212, 16);
+    position: relative;
+    display: flex;
+}
+.box_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 120px;
+    margin-left: 30px;
+}
+.box_buttons::before {
+    content: 'Press the spacebar and the game will start, control buttons on the keyboard';
+    margin-bottom: 12px;
+    width: 200px;
+}
+.btn {
+    margin-bottom: 10px;
+}
+.btn:last-child{
+    margin: 0;
+}
+
+.box_buttons::after {
+    content: 'Press space to restart';
+    margin-top: 12px;
+    width: 200px;
+}
+.img_car i {
+    font-size: 40px;
+    color: yellow;
+    position: relative;
+}
+.img_car {
+    position: relative;
+    height: 40px;
+    width: 40px;
+}

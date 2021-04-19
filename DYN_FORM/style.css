@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formLabel {
+    display: flex;
+    margin: 5px 0;
+}
+.tag {
+    border: none;
+    border-bottom: 1px solid rgb(62, 59, 211);
+}
+.tagOption {
+    border: none;
+    border-bottom: 1px solid rgb(62, 59, 211);
+}

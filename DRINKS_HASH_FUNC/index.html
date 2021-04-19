@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book recipe</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Книга рецептов</h1>   
+    </div>
+
+    <div class="button start">
+     <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Введите название напитка:</label>
+      <input type="search" class="form-control" id="nameDrink" aria-describedby="emailHelp">
+    </div>
+    <label for="exampleFormControlTextarea1" class="form-label">Алкогольный:</label>
+      <select class="form-select" aria-label="Default select example" id="select">
+        <option value="Да" selected="selected">Да</option>
+        <option value="Нет">Нет</option>
+      </select>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Рецепт приготовления напитка:</label>
+      <textarea class="form-control" id="recept" rows="4" id="recept"></textarea>
+    </div>
+      <button type="button" class="btn btn-outline-primary" id="btnAdd">Добавить</button>
+    </div>
+
+    <div class="button info">
+      <button type="button"  class="btn btn-outline-primary" id="btnInfo">Получить список напитков</button>
+      <ol class="listDrink">
+      </ol>
+    </div>
+
+    <div class="button allDrink">
+      <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Введите название напитока, чтобы получить его рецепт:</label>
+      <input type="search" class="form-control" id="searchDrink" aria-describedby="emailHelp" id="infoDrink">
+    </div>
+      <button type="button"  class="btn btn-outline-primary" id="btnAll">Получить рецепт напитков</button>
+      <ul class="searchRe">
+      </ul>
+    </div>
+
+    <div class="button delete">
+      <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Введите название напитка, чтобы удалить его:</label>
+      <input type="search" class="form-control" id="deleteDrink" aria-describedby="emailHelp">
+    </div>
+       <button type="button" class="btn btn-outline-danger" id="btnDelete">Удалить напиток</button>
+
+       <div class="answer">
+        <p class="answer"></p>
+       </div>
+    </div>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

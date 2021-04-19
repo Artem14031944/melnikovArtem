@@ -1,0 +1,27 @@
+* {
+  background-color: skyblue;
+}
+.btn {
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: blueviolet;
+  border: none;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: sans-serif;
+  font-size: 20px;
+ }
+ .btn:hover {
+   cursor: pointer;
+   background-color: blue;
+   color: #fff;
+ }
+ .btn:focus {
+   outline: none;
+ }
+ 

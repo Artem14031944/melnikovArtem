@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>BASKET</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>BASKET</h1>
+    </header>
+    <div class="block">
+      <div class="blockGet">
+        <form action="#" id="form">
+          <div class="block-item">
+            <p>Img:</p>
+            <input type="search" name="img"  id="idImg"  class="input"  placeholder="Вставьте img">
+          </div>
+          <div class="block-item">
+            <p>Price:</p>
+            <input type="search" name="price" id="idPrice" class="input" placeholder="Укажите цену">
+          </div>
+          <div class="block-item">
+            <p>Description:</p>
+            <input type="search" name="desc" id="desc" class="input" placeholder="Опишите ваш товар">
+          </div>
+          <div class="block-item">
+            <p>ID:</p>
+            <input type="search" name="id" id="idID" class="input" placeholder="Введите ID">
+          </div>
+        </form>
+          <div class="block-item button">
+            <button type="button" class="btn btn-primary " id="button_addBasket" >Add</button>
+          </div>
+        </div>
+    <!-- Продукты которые добвлены в список -->
+        <div class="title_Product header">
+          <h2>Product</h2>
+        </div>
+        <div class="addProduct"> </div>
+    <!-- Продукты которые в корзине -->
+        <div class="title_shoppingBasket header">
+          <h2>Shopping Basket</h2>
+        </div>
+        <div class="basket"></div>
+    </div>
+  </div>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
