@@ -9,8 +9,9 @@ function duildWrapper(teg) {
         word = word.replace(/'/g, "&#039;");
 
         if(obj) {
-            for (key in obj){
-                return `<${teg} ${key} ='${obj[key]}' > ${word} </${teg}>`;
+            let objRec = Object.entries(obj)
+            for ([key, val] of objRec){
+                return `<${teg} ${key} ='${val}'> ${word} </${teg}>`;
             } 
         }  
         return `<${teg}> ${word} </${teg}>`;
